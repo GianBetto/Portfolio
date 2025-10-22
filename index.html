@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianluca Bettoni - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Progetti</a></li>
+            <li><a href="#hobbies">Passioni</a></li>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Gianluca Bettoni</h1>
+        <p>Laureato in Ingegneria per l'Ambiente e il Territorio </br> presso il Politecnico di Milano</p>
+        <!-- <p>Developer • Designer • Problem Solver</p> -->
+        <a href="#projects" class="cta-btn">Scopri i miei progetti</a>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>Chi Sono</h2>
+            <p> Laureato in <b>Ingegneria per l'Ambiente e il Territorio</b> presso il <b>Politecnico di Milano</b>, con competenze in ambito <b>civile</b> e una solida preparazione <b>informatica</b> nella gestione di <b>database</b>, sistemi <b>GIS</b> e <b>sviluppo web</b>. Completano il mio background conoscenze di <b>economia aziendale</b> e contabilità, acquisite presso l'<b>Istituto Belotti di Bergamo</b>, utili per operare in contesti con visione economica e organizzativa. </br></br>
+            Sono una persona <b>affidabile, responsabile e precisa</b>, che affronta gli impegni con serietà e attenzione ai dettagli. Collaborativo e disponibile, offro supporto concreto e contribuisco attivamente al raggiungimento degli obiettivi del team. </br></br>
+            Appassionato di <b>sport, tecnologia e innovazione</b>, coltivo hobby che riflettono curiosità, manualità e spirito pratico: suono nella <b>Fanfara di Scanzorosciate</b>, pratico corsa, ciclismo, nuoto e sci, e seguo MotoGP e Formula 1. Amo smontare, analizzare e riparare oggetti per comprenderne il funzionamento e trovare soluzioni pratiche. Tra i miei interessi personali rientrano le nuove tecnologie, l’<b>informatica</b>, la <b>finanza personale</b> e i viaggi, che mantengono viva la mia curiosità e apertura mentale.
+            </p>
+            
+            <div class="skills">
+                <span class="skill-badge">Office</span>
+                <span class="skill-badge">iWork</span>
+                <span class="skill-badge">Programmazione</span>
+                <span class="skill-badge">Web</span>
+                <span class="skill-badge">Database</span>
+                <span class="skill-badge">GIS</span>
+            </div>
+            
+            <a href="CV_Gianluca_Bettoni.pdf" target="_blank" class="cv-btn">📄 Scarica CV</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">I Miei Progetti</h2>
+        
+
+        <!-- PROGETTO HYP -->
+        <div class="project">
+            <div class="project-image">
+                <a href="https://yogatella.vercel.app/" target="_blank" class="">
+                    <img src="img/project_HYP.png" alt="Progetto Sito di Yoga: Yogatella">
+                </a>
+            </div>
+            <div class="project-info">
+                <h3>Yogatella: Sito web di Yoga</h3>
+                <p>Progettazione di pagina web relativa a corsi di yoga, eventi, insegnanti e contatti del centro. L’interfaccia è stata sviluppata seguendo le euristiche di Nielsen e il modello MiLe, con particolare attenzione all’accessibilità e alla facilità di navigazione, garantendo un’esperienza coerente e intuitiva su diversi dispositivi.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Nuxt</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Vercel</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/GianBetto/hypmed_sfogliatella" target="_blank" class="project-link">GitHub</a>
+                    <a href="https://yogatella.vercel.app/" target="_blank" class="project-link">Demo Live</a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- PROGETTO SWE -->
+        <div class="project">
+
+            <div class="project-image slider">
+                <div class="slides">
+                    <img src="img/project_SWE1.png" alt="Progetto SWE">
+                    <img src="img/project_SWE2.png" alt="Progetto SWE">
+                    <img src="img/project_SWE3.png" alt="Progetto SWE">
+                </div>
+                <!-- Pulsanti -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            
+            <div class="project-info">
+                <h3>GeoAir: dashboard web per la qualità dell'aria mediante API</h3>
+                <p>GeoAir è una piattaforma web avanzata per l’analisi e la visualizzazione dei dati sulla qualità dell’aria nella regione Lombardia.
+                Sviluppata con tecnologie web moderne e basata su un’infrastruttura che integra Python per l’elaborazione dei dati e API per l’accesso e l’aggiornamento in tempo reale delle informazioni ambientali, la piattaforma offre mappe interattive, analisi delle tendenze e dashboard dinamiche.
+                GeoAir supporta enti pubblici, ricercatori e decisori nella valutazione dell’inquinamento atmosferico e nella pianificazione di politiche ambientali basate su dati concreti.
+                </p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">API</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/GianBetto/air_quality_analysis" target="_blank" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 
+        ═══════════════════════════════════════════════════════════
+        TEMPLATE PROGETTO - Copia questo blocco per ogni progetto
+        ═══════════════════════════════════════════════════════════
+        -->
+        
+        <!-- PROGETTO 1 -->
+        <div class="project">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop" alt="Progetto E-Commerce">
+            </div>
+            <div class="project-info">
+                <h3>Progetto E-Commerce</h3>
+                <p>Piattaforma e-commerce completa con carrello, pagamenti e gestione ordini. Sistema di autenticazione sicuro e pannello admin per la gestione dei prodotti.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/tuoaccount/progetto1" target="_blank" class="project-link">GitHub</a>
+                    <a href="https://demo.example.com" target="_blank" class="project-link">Demo Live</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROGETTO 2 -->
+        <div class="project">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=400&fit=crop" alt="App Mobile Fitness">
+            </div>
+            <div class="project-info">
+                <h3>App Mobile Fitness</h3>
+                <p>Applicazione mobile per il tracking degli allenamenti con grafici di progressione, piani personalizzati e community integrata.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/tuoaccount/progetto2" target="_blank" class="project-link">GitHub</a>
+                    <a href="https://demo2.example.com" target="_blank" class="project-link">Demo Live</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROGETTO 3 -->
+        <div class="project">
+            <div class="project-image slider">
+                <div class="slides">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop" alt="Progetto E-Commerce 1">
+                    <img src="https://images.unsplash.com/photo-1607083205898-4f038b74b5f7?w=800&h=400&fit=crop" alt="Progetto E-Commerce 2">
+                    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=800&h=400&fit=crop" alt="Progetto E-Commerce 3">
+                </div>
+
+                <!-- Pulsanti -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+
+            <div class="project-info">
+                <h3>Dashboard Analytics</h3>
+                <p>Dashboard interattiva per visualizzazione dati in tempo reale con grafici personalizzabili e export in vari formati.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/tuoaccount/progetto3" target="_blank" class="project-link">GitHub</a>
+                    <a href="https://demo3.example.com" target="_blank" class="project-link">Demo Live</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        ═══════════════════════════════════════════════════════════
+        PER AGGIUNGERE UN NUOVO PROGETTO:
+        1. Copia tutto il blocco da "<- PROGETTO X ->" a "</div>"
+        2. Incolla sotto
+        3. Modifica:
+           - src dell'immagine
+           - alt dell'immagine
+           - h3 (titolo)
+           - p (descrizione)
+           - tech-tag (tecnologie)
+           - href dei link (GitHub e Demo)
+        ═══════════════════════════════════════════════════════════
+        -->
+
+
+
+    </section>
+
+    <!-- Hobbies e Interessi Section -->
+    <section id="hobbies">
+
+        <h2 class="section-title">Interessi e Passioni</h2>
+        
+        <div class="hobbies-container">
+            
+            <!-- HOBBY 1 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/clarinet.png" alt="Clarinetto in una fanfara">
+                </div>
+                <div class="hobby-content">
+                    <h3>🎵 Clarinetto in una fanfara</h3>
+                    <p>Suono il clarinetto nella fanfara di Scanzo, un’esperienza che unisce musica, impegno e compagnia.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 5 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/formula1.png" alt="Formula 1">
+                </div>
+                <div class="hobby-content">
+                    <h3>🏎️ Formula 1</h3>
+                    <p>Seguo con passione la Formula 1, ammirando la tecnologia e la strategia dietro ogni gara.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 6 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/motogp.png" alt="MotoGP">
+                </div>
+                <div class="hobby-content">
+                    <h3>🏍️ MotoGP</h3>
+                    <p>Il brivido delle gare di MotoGP mi affascina, tra duelli, velocità, abilità alla guida e coraggio in pista.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 2 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/run.png" alt="Corsa">
+                </div>
+                <div class="hobby-content">
+                    <h3>🏃‍♂️ Corsa</h3>
+                    <p>Correre all’aria aperta mi aiuta a mantenere la mente libera e il corpo in forma.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 3 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/bici.png" alt="Bici">
+                </div>
+                <div class="hobby-content">
+                    <h3>🚴‍♂️ Bici</h3>
+                    <p>Pedalare in bicicletta è per me un modo di esplorare nuovi paesaggi e migliorare la resistenza fisica.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY - Nuoto -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/nuoto.png" alt="Nuoto">
+                </div>
+                <div class="hobby-content">
+                    <h3>🏊‍♂️ Nuoto</h3>
+                    <p>Il nuoto è per me un’attività rigenerante, che allena il corpo e libera la mente, immerso nel silenzio dell’acqua.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 4 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/sci.png" alt="Sci">
+                </div>
+                <div class="hobby-content">
+                    <h3>⛷️ Sci</h3>
+                    <p>Adoro sciare: la velocità e la libertà sulle piste innevate sono un’emozione unica.</p>
+                </div>
+            </div>
+
+            
+
+            <!-- HOBBY 7 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop" alt="Informatica">
+                </div>
+                <div class="hobby-content">
+                    <h3>💻 Informatica</h3>
+                    <p>Mi interessa il mondo dell’informatica e delle nuove tecnologie, come IA, programmazione e nuovi prodotti tecnologici.</p>
+                </div>
+            </div>
+
+            <!-- HOBBY 8 -->
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <img src="img/finanza.png" alt="Finanza">
+                </div>
+                <div class="hobby-content">
+                    <h3>📈 Finanza</h3>
+                    <p>Studio la finanza personale e i mercati per prendere decisioni consapevoli e gestire al meglio le mie risorse.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Entra in Contatto con Me</h2>
+        <p>Sono sempre aperto a nuove opportunità e collaborazioni</p>
+        
+        <div class="contact-links">
+            <a href="mailto:gianlucabettoniyh92@gmail.com" class="contact-link">📧 Email personale</a>
+            <a href="mailto:gianluca.bettoni@mail.polimi.it" class="contact-link">📧 Email Polimi</a>
+            <a href="https://github.com/GianBetto" target="_blank" class="contact-link">💻 GitHub</a>
+        </div>
+    </section>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll per i link di navigazione
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Simple Image Slider per i progetti (se necessario)
+        const sliders = document.querySelectorAll('.slider');
+
+        sliders.forEach(slider => {
+            const slides = slider.querySelector('.slides');
+            const images = slides.querySelectorAll('img');
+            let index = 0;
+
+            const nextBtn = slider.querySelector('.next');
+            const prevBtn = slider.querySelector('.prev');
+
+            function showSlide(i) {
+                index = (i + images.length) % images.length;
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => showSlide(index + 1));
+            prevBtn.addEventListener('click', () => showSlide(index - 1));
+        });
+    </script>
+</body>
+</html>
