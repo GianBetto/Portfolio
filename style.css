@@ -545,3 +545,23 @@ nav a:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
 }
+
+
+
+/* ═══════════════════════════════════════════════════════════
+   COPYRIGHT SECTION
+    ═══════════════════════════════════════════════════════════ */
+#copyright {
+    position: relative;
+    top: -30px; /* sovrapposizione rispetto alla sezione contact */
+    text-align: center;
+    background: transparent; /* oppure rgba se vuoi leggero contrasto */
+    z-index: 10;
+    height: 0px;
+}
+
+#copyright .copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(31, 41, 55, 0.7); /* colore coerente con il tema */
+}
