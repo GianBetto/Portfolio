@@ -547,6 +547,77 @@ nav a:hover {
 }
 
 
+/* ═══════════════════════════════════════════════════════════
+   SLIDER COMPACT VERSION - più simile a una singola immagine
+   ═══════════════════════════════════════════════════════════ */
+
+.slider-compact {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 350px; /* altezza ridotta */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    background: var(--bg-alt);
+}
+
+.slider-compact .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slider-compact .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* Hover delicato per effetto immagine singola */
+.slider-compact:hover img {
+    transform: scale(1.03);
+}
+
+/* Pulsanti più piccoli e discreti */
+.slider-compact button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.slider-compact button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-compact .prev { left: 15px; }
+.slider-compact .next { right: 15px; }
+
+/* Responsive: altezza minore su schermi piccoli */
+@media (max-width: 768px) {
+    .slider-compact {
+        height: 250px;
+    }
+}
+
+
+
+
+
 
 /* ═══════════════════════════════════════════════════════════
    COPYRIGHT SECTION
