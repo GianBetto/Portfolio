@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianluca Bettoni - Curriculum Vitae</title>
+    <style>
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.4;
+        color: #000000; /* testo nero */
+        background: gray;
+        font-size: 10pt;
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 25%;
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: white;
+        padding: 20px 15px;
+        position: relative;
+    }
+    
+    .main-content {
+        width: 65%;
+        padding: 20px 25px;
+        background: white; /* da #f8f9fa a bianco */
+        color: #000; /* testi neri */
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 140px;
+        background: #ddd;
+        margin: 0 auto 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 3px solid rgba(255,255,255,0.2);
+    }
+    
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* --- Contatti --- */
+    .contact-section {
+        margin-bottom: 18px;
+    }
+
+    .contact-title {
+        font-size: 10pt;
+        font-weight: 600;
+        margin-bottom: 3px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.85);
+    }
+
+    .contact-value {
+        font-size: 9.5pt;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #fff;
+        padding-left: 2px;
+    }
+
+    .contact-section:last-of-type {
+        margin-bottom: 25px;
+    }
+    
+    .section-divider {
+        height: 1px;
+        background: rgba(255,255,255,0.3);
+        margin: 20px 0;
+    }
+    
+    .skills-section {
+        margin-bottom: 25px;
+    }
+    
+    .skills-title {
+        font-size: 14pt;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: white;
+    }
+    
+    .skill-item {
+        margin-bottom: 9px;
+        font-size: 9pt;
+        color: rgba(255,255,255,0.9);
+        font-weight: 300;
+    }
+    
+    .languages-section {
+        margin-bottom: 25px;
+    }
+    
+    .language-item {
+        margin-bottom: 8px;
+        font-size: 9pt;
+    }
+    
+    .language-name {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .language-level {
+        color: rgba(255,255,255,0.8);
+        font-weight: 300;
+        font-size: 8pt;
+    }
+    
+    .main-header {
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 24pt;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+    
+    .role {
+        font-size: 12pt;
+        color: #000000; /* testo nero invece di grigio */
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 13pt;
+        font-weight: 700;
+        color: #4a90e2;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+    
+    .content-text {
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-size: 9pt;
+        color: #000000; /* testo nero */
+    }
+    
+    .highlight {
+        font-weight: 600;
+        color: #2c3e50;
+    }
+    
+    .education-item {
+        margin-bottom: 15px;
+    }
+    
+    .degree-title {
+        color: #4a90e2;
+        font-weight: 600;
+        font-size: 11pt;
+        margin-bottom: 3px;
+    }
+    
+    .education {
+    font-size: 9pt;
+    }
+
+    .institution {
+    font-weight: 700;
+    color: #2c3e50;
+    }
+
+    .period {
+    color: #7f8c8d;
+    font-style: italic;
+    }
+
+    .additional-info {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #e0e0e0;
+    }
+    
+    .info-item {
+        margin-bottom: 10px;
+        font-size: 9pt;
+        color: #000000; /* nero */
+    }
+    
+    @media print {
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+    
+    .editable {
+        min-height: 15px;
+        padding: 1px;
+        border-radius: 2px;
+        
+    }
+    
+    .editable:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+    
+    .editable:focus {
+        outline: 1px solid rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.05);
+    }
+    
+    .main-content .editable:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .main-content .editable:focus {
+        outline: 1px solid #4a90e2;
+        background-color: white;
+    }
+
+    b {
+    font-weight: 600;
+}
+</style>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-photo">
+            <img src="profilo.jpg" alt="Foto Profilo">
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Email</div>
+            <div class="contact-value editable" contenteditable="true">gianlucabettoniyh92@gmail.com</div>
+            <div class="contact-value editable" contenteditable="true">gianluca.bettoni@mail.polimi.it</div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Indirizzo</div>
+            <div class="contact-value editable" contenteditable="true">Via Giacomo Leopardi 8 - 24020 Scanzorosciate, Bergamo, Italia</div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Telefono</div>
+            <div class="contact-value editable" contenteditable="true">(+39) 370 700 8765</div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Data di nascita</div>
+            <div class="contact-value editable" contenteditable="true">05/04/2002</div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Nazionalità</div>
+            <div class="contact-value editable" contenteditable="true">Italiana</div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <div class="skills-section">
+            <div class="skills-title">Competenze</div>
+            <div class="skill-item editable" contenteditable="true">Office: <strong>Word, Excel, PowerPoint</strong></div>
+            <div class="skill-item editable" contenteditable="true">Apple: <strong>Pages, Numbers, Keynote</strong></div>
+            <div class="skill-item editable" contenteditable="true">Web: <strong>HTML, CSS, PHP, JavaScript</strong></div>
+            <div class="skill-item editable" contenteditable="true">Programmazione: <strong>Visual Basic, C, R, Python</strong></div>
+            <div class="skill-item editable" contenteditable="true">Database: <strong>MySQL, Access</strong></div>
+            <div class="skill-item editable" contenteditable="true">GIS: <strong>QGIS, ArcGIS</strong></div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <div class="languages-section">
+            <div class="skills-title">Lingue</div>
+            <div class="contact-section">
+                <div class="contact-title">Inglese</div>
+                <div class="contact-value editable" contenteditable="true">Certificazoine TOEIC B2</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-title">Spagnolo</div>
+                <div class="contact-value editable" contenteditable="true">Livello base</div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <div class="contact-section">
+            <div class="contact-title">Patenti</div>
+            <div class="contact-value editable" contenteditable="true">A2 (moto), B (auto)</div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="main-header">
+            <div class="name editable" contenteditable="true">Gianluca Bettoni</div>
+            <div class="role editable" contenteditable="true">Laureato</div>
+        </div>
+        
+        <div class="section-title">Profilo Professionale</div>
+        <div class="content-text editable" contenteditable="true">
+            Laureato in <b>Ingegneria per l'Ambiente e il Territorio</b> presso il <b>Politecnico di Milano</b>, con competenze in <b>ambito civile</b> e una solida preparazione <b>informatica</b> nella gestione di <b>database</b>, sistemi <b>GIS</b> e <b>sviluppo web</b>. Completano il mio background conoscenze di <b>economia aziendale e contabilità</b>, acquisite presso l'<b>Istituto Belotti</b>, utili per operare in contesti con visione economica e organizzativa.
+        </div>
+
+        <div class="content-text editable" contenteditable="true">
+            Sono una persona <b>affidabile, responsabile e precisa</b>, che affronta gli impegni con serietà e attenzione ai dettagli. <b>Collaborativo e disponibile</b>, offro supporto concreto e contribuisco attivamente al raggiungimento degli obiettivi del team.
+        </div>
+
+        <div class="content-text editable" contenteditable="true">
+            Appassionato di <b>sport, tecnologia e innovazione</b>, coltivo hobby che riflettono curiosità, manualità e spirito pratico: suono nella fanfara del mio paese, pratico corsa, ciclismo, nuoto e sci, e seguo MotoGP e Formula 1. Amo smontare, analizzare e riparare oggetti per comprenderne il funzionamento e trovare soluzioni pratiche. Tra i miei interessi personali rientrano le nuove tecnologie, l’informatica, la finanza personale e i viaggi, che mantengono viva la mia curiosità e apertura mentale.
+        </div>
+
+        <div class="content-text editable" contenteditable="true">
+            Motivato a entrare in <b>realtà dinamiche</b>, cerco opportunità dove applicare le mie competenze tecniche e pratiche, contribuendo a progetti concreti e innovativi.
+        </div>
+
+        
+        <div class="section-title additional-info">Istruzione e Formazione</div>
+        
+        <div class="education-item"> 
+            <div class="degree-title editable" contenteditable="true">• Laurea Magistrale in Geoinformatics Engineering</div>
+            <div class="education editable" contenteditable="true">
+                <span class="institution">Politecnico di Milano</span> - 
+                <span class="period"><b>2025 (in corso)</b></span>
+            </div>
+            <div class="content-text" style="font-size: 8pt; margin-top: 5px; line-height: 1.3;">
+                <div class="editable" contenteditable="true">- Realizzazione di un’applicazione web in <b>Python</b> per raccolta automatizzata di dati sugli <b>inquinanti ambientali</b> tramite <b>API REST</b>, con analisi e visualizzazione interattiva su <b>pagina web</b>.</div>
+                <div class="editable" contenteditable="true">- Collaborazione allo sviluppo di pagina web con <b>mappe interattive</b> sull’<b>inquinamento atmosferico</b>, realizzata con <b>QGIS Server</b> da dati geospaziali.</div>
+                <div class="editable" contenteditable="true">- Progettazione e sviluppo in team del <b>sito web</b> Yogatella, utilizzando <b>HTML</b>, <b>CSS</b> e <b>Nuxt</b>, con deploy su <b>Vercel</b>, gestione codice su <b>GitHub</b> e attenzione a <b>UX/UI</b> e design responsive.</div>
+            </div>
+        </div>
+
+        <div class="education-item"> 
+            <div class="degree-title editable" contenteditable="true">• Laurea Triennale in Ingegneria per l’Ambiente e il Territorio</div>
+            <div class="education editable" contenteditable="true">
+                <span class="institution">Politecnico di Milano</span> - 
+                <span class="period"><b>2021–2025</b></span>
+            </div>
+            <div class="content-text" style="font-size: 8pt; margin-top: 5px; line-height: 1.3;">
+                <div class="editable" contenteditable="true">- <b>Primo classificato</b> in progetto di gruppo per <b>mitigazione del rischio idraulico</b> del fiume Seveso con vasche di laminazione e sistemi di fitodepurazione naturale.</div>
+                <div class="editable" contenteditable="true">- Progettazione e <b>dimensionamento</b> di una <b>paratia</b> per la sicurezza di un alveo fluviale, integrando modellazione idraulica e <b>analisi geotecniche</b>.</div>
+                <div class="editable" contenteditable="true">- Sviluppato script in <b>RStudio</b> integrato con <b>QGIS</b> per <b>analisi idrologiche</b> di bacini montani e generazione di <b>mappe</b> tematiche.</div>
+                <div class="editable" contenteditable="true">- Partecipazione a <b>progetto di valorizzazione territoriale</b> della Valtellina su energie rinnovabili, data center e smart working.</div>
+                <div class="editable" contenteditable="true">- Progetto di <b>interpolazione dati</b> spaziali con <b>QGIS</b> e <b>ArcGIS</b>, gestione outlier e redazione mappe tematiche per pianificazione ambientale.</div>
+            </div>
+        </div>
+
+        <div class="education-item"> 
+            <div class="degree-title editable" contenteditable="true">• Diploma Tecnico Economico – Indirizzo Informatico</div>
+            <div class="education editable" contenteditable="true">
+                <span class="institution">Istituto Bortolo Belotti</span> - 
+                <span class="period"><b>2021</b></span>
+            </div>
+            <div class="content-text" style="font-size: 8pt; margin-top: 5px; line-height: 1.3;">
+                <div class="editable" contenteditable="true">- Progettazione e sviluppo di <b>sito web</b> aziendale <b>B2C</b> con <b>HTML</b>, <b>CSS</b> e <b>PHP</b>, completo di analisi e simulazione del <b>bilancio economico</b>.</div>
+                <div class="editable" contenteditable="true">- Esecuzione di analisi finanziaria su caso aziendale reale, con redazione di report e valutazione della redditività.</div>
+                <div class="editable" contenteditable="true">- Esperienza di alternanza scuola-lavoro in azienda informatica con attività di <b>sviluppo software</b>.</div>
+            </div>
+        </div>
+
+      
+        
+        <footer>
+            <p style="font-size: 0.6em; color: #555; text-align: center; margin-top: 30px;">
+                Autorizzo il trattamento dei miei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003 e successive modifiche, esclusivamente per finalità connesse alla selezione del personale.
+            </p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
